@@ -119,4 +119,15 @@ finishLoan(returnDate)</panel_attributes>
 return loan information</panel_attributes>
     <additional_attributes>380.0;20.0;10.0;20.0</additional_attributes>
   </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>156</x>
+      <y>351</y>
+      <w>637</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Loop</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
