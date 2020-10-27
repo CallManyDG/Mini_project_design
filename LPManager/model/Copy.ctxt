@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Copy
+comment1.params=serialNumber
+comment1.target=Copy(int)
+comment2.params=serialNumber
+comment2.target=void\ setSerialNumber(int)
+comment2.text=\r\n\ Set\ the\ serial\ number\ of\ the\ copy\r\n
+comment3.params=available
+comment3.target=void\ setAvailable(boolean)
+comment3.text=\r\n\ Set\ the\ availability\ of\ the\ copy\r\n
+comment4.params=
+comment4.target=int\ getSerialNumber()
+comment4.text=\r\n\ Get\ the\ serial\ number\ of\ the\ copy\r\n
+comment5.params=
+comment5.target=boolean\ isAvailable()
+comment5.text=\r\n\ \ Check\ the\ availability\ of\ the\ copy\r\n
+numComments=6

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=LoanContainer
+comment1.params=
+comment1.target=LoanContainer()
+comment2.params=
+comment2.target=LoanContainer\ getInstance()
+comment3.params=loan
+comment3.target=boolean\ addLoan(Loan)
+comment4.params=loan
+comment4.target=boolean\ removeLoan(Loan)
+comment5.params=
+comment5.target=java.util.ArrayList\ getAllLoans()
+numComments=6

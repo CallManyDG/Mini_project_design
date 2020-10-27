@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=LPContainer
+comment1.params=
+comment1.target=LPContainer()
+comment2.params=
+comment2.target=LPContainer\ getInstance()
+comment3.params=lp
+comment3.target=boolean\ addLP(LP)
+comment4.params=lp
+comment4.target=boolean\ removeLP(LP)
+comment5.params=
+comment5.target=java.util.ArrayList\ getAllLPs()
+numComments=6

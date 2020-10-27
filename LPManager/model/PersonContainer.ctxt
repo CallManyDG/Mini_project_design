@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=PersonContainer
+comment1.params=
+comment1.target=PersonContainer()
+comment2.params=
+comment2.target=PersonContainer\ getInstance()
+comment3.params=person
+comment3.target=boolean\ addPerson(Person)
+comment4.params=person
+comment4.target=boolean\ removePerson(Person)
+comment5.params=
+comment5.target=java.util.ArrayList\ getAllPersons()
+numComments=6
