@@ -69,7 +69,7 @@ public class LP {
      *  Add a copy
      */
     public void addCopy(Copy copy) {
-        if(copy != null) {
+        if(copy != null) { //Only if the copy is set
             copies.add(copy);
         }
     }
