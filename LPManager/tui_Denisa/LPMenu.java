@@ -1,4 +1,4 @@
-package tui;
+package tui_Denisa;
 import java.util.*;
 
 /**
@@ -9,17 +9,14 @@ import java.util.*;
  */
 public class LPMenu
 {
-    public LPMenu ()
-    {
+    public LPMenu () {
     }
 
-    public void start() 
-    {
+    public void start() {
         LPmenu();
     }
 
-    private void LPmenu()
-    {
+    private void LPmenu() {
         boolean running = true;
         while (running) {
             int choice = writeLPMenu();
@@ -41,8 +38,7 @@ public class LPMenu
         }
     }
 
-    private int writeLPMenu ()
-    {
+    private int writeLPMenu () {
         Scanner keyboard = new Scanner (System.in);
         System.out.println ("*****LP menu*****");
         System.out.println ("(1) ???");

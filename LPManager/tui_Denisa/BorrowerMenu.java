@@ -1,4 +1,4 @@
-package tui;
+package tui_Denisa;
 import java.util.*;
 
 /**
@@ -9,17 +9,14 @@ import java.util.*;
  */
 public class BorrowerMenu
 {
-    public BorrowerMenu ()
-    {
+    public BorrowerMenu (){
     }
 
-    public void start ()
-    {
+    public void start () {
         borrowerMenu();
     }
 
-    private void borrowerMenu()
-    {
+    private void borrowerMenu() {
         boolean running = true;
         while (running) {
             int choice = writeBorrowerMenu();
@@ -40,8 +37,7 @@ public class BorrowerMenu
         }
     }
 
-    private int writeBorrowerMenu()
-    {
+    private int writeBorrowerMenu() {
         Scanner keyboard = new Scanner (System.in);
         System.out.println ("*****Borrower menu*****");
         System.out.println ("(1) ??");

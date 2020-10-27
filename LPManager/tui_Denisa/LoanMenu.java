@@ -1,4 +1,4 @@
-package tui;
+package tui_Denisa;
 import java.util.Scanner;
 
 /**
@@ -9,17 +9,14 @@ import java.util.Scanner;
  */
 public class LoanMenu
 {
-    public LoanMenu() 
-    {
+    public LoanMenu() {
     }
 
-    public void start () 
-    {
+    public void start () {
         loanMenu();
     }
 
-    private void loanMenu()
-    {
+    private void loanMenu() {
         boolean running = true;
         while (running) {
             int choice = writeLoanMenu();
@@ -38,8 +35,7 @@ public class LoanMenu
         }
     }
 
-    private int writeLoanMenu ()
-    {
+    private int writeLoanMenu () {
         Scanner keyboard = new Scanner (System.in);
         System.out.println ("*****Loan menu*****");
         System.out.println ("(1) Create a loan");
