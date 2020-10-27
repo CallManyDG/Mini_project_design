@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=MainMenuUI
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MainMenuUI\ here.\r\n\r\n\ @author\ Denisa\r\n\ @version\ 26\ oct.\ 2020\r\n
+comment1.params=
+comment1.target=MainMenuUI()
+comment2.params=
+comment2.target=void\ start()
+comment3.params=
+comment3.target=void\ mainMenu()
+comment4.params=
+comment4.target=int\ writeMainMenu()
+comment5.params=
+comment5.target=void\ writeEnd()
+numComments=6

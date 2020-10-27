@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=LoanMenu
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ LoanMenu\ here.\r\n\r\n\ @author\ Denisa\r\n\ @version\ 26\ oct.\ 2020\r\n
+comment1.params=
+comment1.target=LoanMenu()
+comment2.params=
+comment2.target=void\ start()
+comment3.params=
+comment3.target=void\ loanMenu()
+comment4.params=
+comment4.target=int\ writeLoanMenu()
+comment5.params=keyboard
+comment5.target=int\ getIntegerFromUser(java.util.Scanner)
+numComments=6
