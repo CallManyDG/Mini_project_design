@@ -1,7 +1,9 @@
 #BlueJ class context
 comment0.target=LPController
-comment1.params=title\ author
-comment1.target=model.Copy\ findFirstAvailableCopy(java.lang.String,\ java.lang.String)
+comment1.params=title\ author\ publicationDate
+comment1.target=boolean\ createLP(java.lang.String,\ java.lang.String,\ java.lang.String)
 comment2.params=title\ author
-comment2.target=model.LP\ getLPByNameAndAuthor(java.lang.String,\ java.lang.String)
-numComments=3
+comment2.target=model.Copy\ findFirstAvailableCopy(java.lang.String,\ java.lang.String)
+comment3.params=title\ author
+comment3.target=model.LP\ getLPByNameAndAuthor(java.lang.String,\ java.lang.String)
+numComments=4

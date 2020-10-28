@@ -23,7 +23,6 @@ public class LoanController {
         if(person != null) {
             result = personCon.addLoanToPerson(loan, person);
         }
-        
         return result;
     }
     

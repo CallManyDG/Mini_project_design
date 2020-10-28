@@ -1,6 +1,5 @@
 #BlueJ class context
 comment0.target=LPMenu
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ LPMenu\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=LPMenu()
 comment2.params=
@@ -8,7 +7,9 @@ comment2.target=void\ start()
 comment3.params=
 comment3.target=void\ LPmenu()
 comment4.params=
-comment4.target=int\ writeLPMenu()
-comment5.params=keyboard
-comment5.target=int\ getIntegerFromUser(java.util.Scanner)
-numComments=6
+comment4.target=boolean\ createLP()
+comment5.params=
+comment5.target=int\ writeLPMenu()
+comment6.params=keyboard
+comment6.target=int\ getIntegerFromUser(java.util.Scanner)
+numComments=7

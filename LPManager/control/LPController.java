@@ -4,6 +4,17 @@ import java.util.*;
 import model.*;
 
 public class LPController {
+    
+    public boolean createLP(String title, String author, String publicationDate) {
+        LPContainer lpCon = LPContainer.getInstance();
+        boolean result = false;
+        if(getLPByNameAndAuthor(title, author) == null) { //If the LP doesn't exit already
+            LP lp = new LP(title, author, publicationDate);
+            result = lpCon.addLP(lp);
+        }
+        return result;
+    }
+    
     public Copy findFirstAvailableCopy(String title, String author) {
         // Find LP by name and author
         Copy copyToReturn = null;
