@@ -15,7 +15,7 @@ public class Loan {
     
     public Loan(String agreedReturnDate, ArrayList<Copy> copies) {
         this.loanID = ++uniqueID;
-        this.borrowDate = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+        this.borrowDate = new SimpleDateFormat("dd/MM/yyyy").format(new Date());
         this.agreedReturnDate = agreedReturnDate;
         this.copies = copies;
     }

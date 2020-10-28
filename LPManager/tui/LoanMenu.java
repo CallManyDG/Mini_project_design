@@ -52,8 +52,12 @@ public class LoanMenu
         String agreedReturnDate = keyboard.nextLine();
         ArrayList<Copy> copies = getCopies();
         
-        //TODO User input for date, phone, title, and author
-        loanControl.createLoan(agreedReturnDate, copies, phone);
+        if(copies == null || copies.isEmpty()) {
+            System.out.println("No copies specified... cancelling loan creation.");
+        } else {
+            //TODO User input for date, phone, title, and author
+            result = loanControl.createLoan(agreedReturnDate, copies, phone);
+        }
         return result;
     }
     
@@ -75,7 +79,7 @@ public class LoanMenu
                     if (copy != null) {
                         copiesToReturn.add(copy);
                     } else {
-                        System.out.printf("The copy by title %s and author %s was not found!%nTry again.%n", title, author);
+                        System.out.printf("The copy by title %s and author %s was not found!%nTry again.%n%n", title, author);
                     }
             }
         }

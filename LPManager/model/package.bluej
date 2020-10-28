@@ -1,4 +1,5 @@
 #BlueJ package file
+<<<<<<< Updated upstream
 dependency1.from=LP
 dependency1.to=Copy
 dependency1.type=UsesDependency
@@ -9,6 +10,18 @@ dependency3.from=LoanContainer
 dependency3.to=Loan
 dependency3.type=UsesDependency
 dependency4.from=Person
+=======
+dependency1.from=Person
+dependency1.to=Loan
+dependency1.type=UsesDependency
+dependency2.from=LP
+dependency2.to=Copy
+dependency2.type=UsesDependency
+dependency3.from=LPContainer
+dependency3.to=LP
+dependency3.type=UsesDependency
+dependency4.from=LoanContainer
+>>>>>>> Stashed changes
 dependency4.to=Loan
 dependency4.type=UsesDependency
 dependency5.from=PersonContainer
