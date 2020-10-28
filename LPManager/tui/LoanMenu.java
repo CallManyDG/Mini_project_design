@@ -1,4 +1,4 @@
-package tui_Denisa;
+package tui;
 import java.util.Scanner;
 
 /**
