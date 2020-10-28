@@ -14,7 +14,7 @@ public class PersonController {
                 Person currentPerson = searcher.next();
                 if(currentPerson.getPhone().equals(phone)) {
                     personToReturn = currentPerson;
-                    searching = true;
+                    searching = false;
                 }
             }
         }

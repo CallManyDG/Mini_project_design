@@ -1,5 +1,9 @@
 package tui;
+
+import control.*;
+import model.*;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 /**
  * Write a description of class LoanMenu here.
@@ -9,7 +13,10 @@ import java.util.Scanner;
  */
 public class LoanMenu
 {
+    private LoanController loanControl;
+    
     public LoanMenu() {
+        
     }
 
     public void start () {
@@ -25,7 +32,7 @@ public class LoanMenu
                     running = false;
                     break;
                 case 1:
-                    System.out.println ("NOT IMPLEMENTED YET// Create a loan");
+                    createLoan();
                     break;
                 default:
                     System.out.println ("Wrong choice");
@@ -35,6 +42,15 @@ public class LoanMenu
         }
     }
 
+    private boolean createLoan() {
+        boolean result = false;
+        String agreedReturnDate, phone, title, author;
+        ArrayList<Copy> copies;
+        //TODO User input for date, phone, title, and author
+        loanControl.createLoan(agreedReturnDate, copies, phone);
+        return result;
+    }
+    
     private int writeLoanMenu () {
         Scanner keyboard = new Scanner (System.in);
         System.out.println ("*****Loan menu*****");
