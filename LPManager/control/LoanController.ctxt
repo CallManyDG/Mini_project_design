@@ -2,4 +2,6 @@
 comment0.target=LoanController
 comment1.params=
 comment1.target=void\ createLoan()
-numComments=2
+comment2.params=borrowDate\ agreedReturnDate\ copies
+comment2.target=boolean\ createLoan(java.lang.String,\ java.lang.String,\ java.util.ArrayList)
+numComments=3

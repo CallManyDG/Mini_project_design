@@ -11,7 +11,7 @@ public class LPContainer {
         lps = new ArrayList<>();
     }
     
-    public LPContainer getInstance() {
+    public static LPContainer getInstance() {
         return instance;
     }
 

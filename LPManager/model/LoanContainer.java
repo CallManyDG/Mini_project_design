@@ -11,7 +11,7 @@ public class LoanContainer {
         loans = new ArrayList<>();
     }
     
-    public LoanContainer getInstance() {
+    public static LoanContainer getInstance() {
         return instance;
     }
 
