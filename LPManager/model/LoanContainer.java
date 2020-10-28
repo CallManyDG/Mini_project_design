@@ -32,9 +32,6 @@ public class LoanContainer {
     }
     
     public ArrayList<Loan> getAllLoans() {
-        if(!loans.isEmpty()) {
-            return loans;
-        }
-        return null;
+        return loans;
     }
 }

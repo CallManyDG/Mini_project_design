@@ -32,9 +32,6 @@ public class PersonContainer {
     }
     
     public ArrayList<Person> getAllPersons() {
-        if(!persons.isEmpty()) {
-            return persons;
-        }
-        return null;
+        return persons;
     }
 }

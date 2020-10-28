@@ -16,7 +16,7 @@ public class LoanMenu
     private LoanController loanControl;
     
     public LoanMenu() {
-        
+        loanControl = new LoanController();
     }
 
     public void start () {
@@ -44,11 +44,52 @@ public class LoanMenu
 
     private boolean createLoan() {
         boolean result = false;
-        String agreedReturnDate, phone, title, author;
-        ArrayList<Copy> copies;
+        Scanner keyboard = new Scanner(System.in);
+        
+        System.out.printf("Enter a phone number to find a person...%n>");
+        String phone = keyboard.nextLine();
+        System.out.printf("Enter an agreed return date for the copy...%n>");
+        String agreedReturnDate = keyboard.nextLine();
+        ArrayList<Copy> copies = getCopies();
+        
         //TODO User input for date, phone, title, and author
         loanControl.createLoan(agreedReturnDate, copies, phone);
         return result;
+    }
+    
+    private ArrayList<Copy> getCopies() {
+        ArrayList<Copy> copiesToReturn = new ArrayList<>();
+        Scanner keyboard = new Scanner(System.in);
+        boolean running = true;
+        while(running) {
+            switch(printCopyLoanMenu()) {
+                case 0:
+                    running = false;
+                    break;
+                case 1:
+                    System.out.printf("Enter a title...%n>");
+                    String title = keyboard.nextLine();
+                    System.out.printf("Enter an author...%n>");
+                    String author = keyboard.nextLine();
+                    Copy copy = loanControl.getCopy(title, author);
+                    if (copy != null) {
+                        copiesToReturn.add(copy);
+                    } else {
+                        System.out.printf("The copy by title %s and author %s was not found!%nTry again.%n", title, author);
+                    }
+            }
+        }
+        return copiesToReturn;
+    }
+    
+    private int printCopyLoanMenu() {
+        Scanner keyboard = new Scanner (System.in);
+        System.out.println ("*****Add Copy*****");
+        System.out.println ("(1) Add copy");
+        System.out.println ("(0) Exit");
+        System.out.println ("Select: ");
+        int choice = getIntegerFromUser(keyboard);
+        return choice;
     }
     
     private int writeLoanMenu () {
@@ -60,7 +101,7 @@ public class LoanMenu
         int choice = getIntegerFromUser(keyboard);
         return choice;
     }
-
+    
     private int getIntegerFromUser(Scanner keyboard) {
         while (!keyboard.hasNextInt()) {
             System.out.println("Input must be a number! Try again.");

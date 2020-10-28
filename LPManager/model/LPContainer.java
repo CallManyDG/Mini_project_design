@@ -32,9 +32,6 @@ public class LPContainer {
     }
         
     public ArrayList<LP> getAllLPs() {
-        if(!lps.isEmpty()) {
-            return lps;
-        }
-        return null;
+        return lps;
     }
 }

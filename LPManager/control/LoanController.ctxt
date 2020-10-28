@@ -1,7 +1,9 @@
 #BlueJ class context
 comment0.target=LoanController
 comment1.params=
-comment1.target=void\ createLoan()
+comment1.target=LoanController()
 comment2.params=agreedReturnDate\ copies\ phone
 comment2.target=boolean\ createLoan(java.lang.String,\ java.util.ArrayList,\ java.lang.String)
-numComments=3
+comment3.params=title\ author
+comment3.target=model.Copy\ getCopy(java.lang.String,\ java.lang.String)
+numComments=4
