@@ -13,6 +13,7 @@ public class MainMenuUI
     private LoanMenu loanMenu;
     private BorrowerMenu borrowerMenu;
     private LPMenu lpMenu;
+    private TryMe tryMe = new TryMe();
     
     public MainMenuUI () {
         loanMenu = new LoanMenu();
@@ -44,7 +45,7 @@ public class MainMenuUI
                     loanMenu.start();
                     break;
                 case 9:
-                    System.out.println ("NOT IMPLEMENTED YET// Generate testdata");
+                    tryMe.tryMe();
                     break;
                 default:
                     System.out.println ("An unexpected error occured with choice: " +choice);
