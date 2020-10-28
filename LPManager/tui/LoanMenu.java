@@ -46,17 +46,20 @@ public class LoanMenu
         boolean result = false;
         Scanner keyboard = new Scanner(System.in);
         
-        System.out.printf("Enter a phone number to find a person...%n>");
+        System.out.printf("Enter a phone number to find a person...%n> ");
         String phone = keyboard.nextLine();
-        System.out.printf("Enter an agreed return date for the copy...%n>");
+        System.out.printf("Enter an agreed return date for the copy...%n> ");
         String agreedReturnDate = keyboard.nextLine();
         ArrayList<Copy> copies = getCopies();
         
         if(copies == null || copies.isEmpty()) {
             System.out.println("No copies specified... cancelling loan creation.");
         } else {
-            //TODO User input for date, phone, title, and author
-            result = loanControl.createLoan(agreedReturnDate, copies, phone);
+            if(loanControl.createLoan(agreedReturnDate, copies, phone)) {
+                System.out.println("Successfuly created the loan.");
+            } else {
+                System.out.printf("Failed to find person with phone number \"%s\"!%n", phone);
+            }
         }
         return result;
     }
@@ -71,12 +74,13 @@ public class LoanMenu
                     running = false;
                     break;
                 case 1:
-                    System.out.printf("Enter a title...%n>");
+                    System.out.printf("Enter a title...%n> ");
                     String title = keyboard.nextLine();
-                    System.out.printf("Enter an author...%n>");
+                    System.out.printf("Enter an author...%n> ");
                     String author = keyboard.nextLine();
                     Copy copy = loanControl.getCopy(title, author);
                     if (copy != null) {
+                        System.out.printf("Added %s by %s to the copies to loan%n", title, author);
                         copiesToReturn.add(copy);
                     } else {
                         System.out.printf("The copy by title %s and author %s was not found!%nTry again.%n%n", title, author);

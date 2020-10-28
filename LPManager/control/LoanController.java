@@ -19,9 +19,10 @@ public class LoanController {
         Person person = personCon.findPersonByPhone(phone);
         // Call loan constructor
         Loan loan = new Loan(agreedReturnDate, copies);
-        // assing loan to person
-        if(person != null)
+        // Assing loan to person
+        if(person != null) {
             result = personCon.addLoanToPerson(loan, person);
+        }
         
         return result;
     }
