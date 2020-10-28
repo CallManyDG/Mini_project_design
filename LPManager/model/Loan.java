@@ -13,7 +13,7 @@ public class Loan {
     
     private static int uniqueID = 0;
     
-    public Loan(String borrowDate, String agreedReturnDate, ArrayList<Copy> copies) {
+    public Loan(String agreedReturnDate, ArrayList<Copy> copies) {
         this.loanID = ++uniqueID;
         this.borrowDate = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
         this.agreedReturnDate = agreedReturnDate;

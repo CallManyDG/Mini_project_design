@@ -20,4 +20,9 @@ public class PersonController {
         }
         return personToReturn;
     }
+    
+    public boolean addLoanToPerson(Loan loan, Person person)
+    {
+        return person.addLoan(loan);
+    }
 }

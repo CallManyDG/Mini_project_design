@@ -2,4 +2,6 @@
 comment0.target=PersonController
 comment1.params=phone
 comment1.target=model.Person\ findPersonByPhone(java.lang.String)
-numComments=2
+comment2.params=loan\ person
+comment2.target=boolean\ addLoanToPerson(model.Loan,\ model.Person)
+numComments=3
