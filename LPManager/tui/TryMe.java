@@ -27,6 +27,34 @@ public class TryMe
     }
     
     private void fillLPContainer() {
+        LPContainer lpCon = LPContainer.getInstance();
         
+        LP lp1 = new LP("Harry Potter", "JK Rowling", "14.1.2020");
+        Copy cp1 = new Copy(123456);
+        lp1.addCopy(cp1);
+        lpCon.addLP(lp1);
+        
+        LP lp2 = new LP("Hobbit", "John R.R. Tolkien", "14.1.2020");
+        Copy cp2 = new Copy(1262345);
+        cp2.setAvailable(false);
+        lp2.addCopy(cp2);
+        lpCon.addLP(lp2);
+        
+        LP lp3 = new LP("LOTR", "John R.R. Tolkien", "14.1.2020");
+        Copy cp3 = new Copy(153453);
+        lp3.addCopy(cp3);
+        lpCon.addLP(lp3);
+        
+        LP lp4 = new LP("LOTR 2", "John R.R. Tolkien", "14.1.2020");
+        Copy cp4 = new Copy(1234563);
+        cp4.setAvailable(true);
+        lp4.addCopy(cp4);
+        lpCon.addLP(lp4);
+        
+        LP lp5 = new LP("LOTR 3", "John R.R. Tolkien", "14.1.2020");
+        Copy cp5 = new Copy(1232185);
+        cp5.setAvailable(false);
+        lp5.addCopy(cp5);
+        lpCon.addLP(lp5);
     }
 }
