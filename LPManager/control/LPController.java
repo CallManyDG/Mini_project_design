@@ -45,9 +45,9 @@ public class LPController {
      *  Returns the found copy or null
      */
     public Copy findFirstAvailableCopy(String title, String author) {
-        // Find LP by name and author
         Copy copyToReturn = null;
         LPContainer lpCon = LPContainer.getInstance();
+        // Find LP by name and author
         LP lp = lpCon.getLPByNameAndAuthor(title, author);
         // Loop through all the copies
         if(lp != null) {
