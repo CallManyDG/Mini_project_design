@@ -2,13 +2,23 @@ package model;
 
 import java.util.ArrayList;
 
+/**
+ * This class is used to represent an LP. It has an author, title, publication date
+ * and a list of copies
+ * 
+ * @author Group1 for MiniProject-Design DMAI0920
+ * @version 27 October 2020
+ */
 public class LP {
-    // initialize the class fileds
+    //Fields of the class
     private String title;
     private String author;
     private String publicationDate;
     private ArrayList<Copy> copies;
 
+    /**
+     * Constructor for objects of class LP
+     */
     public LP(String title, String author, String publicationDate) {
         this.title = title;
         this.author = author;
@@ -17,56 +27,41 @@ public class LP {
     }
 
     /**
-     *  Set the title of the LP
-     */
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    /**
-     *  Set the author of the LP
-     */
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    /**
-     *  Set the publication date of the LP
-     */
-    public void setPublicationDate(String publicationDate) {
-        this.publicationDate = publicationDate;
-    }
-
-    /**
-     *  Get the title
+     *  Accessors for the title, author, publicationDate, copies
      */
     public String getTitle() {
         return title;
     }
 
-    /**
-     *  Get the author
-     */
     public String getAuthor() {
         return author;
     }
 
-    /**
-     *  Get the publication date
-     */
     public String getPublicationDate() {
         return publicationDate;
     }
 
-    /**
-     *  Get all copies
-     */
     public ArrayList<Copy> getAllCopies() {
         return copies;
     }
+    
+    /**
+     *  Mutators for the title, author, publicationDate, copies
+     */
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void setPublicationDate(String publicationDate) {
+        this.publicationDate = publicationDate;
+    }
 
     /**
-     *  Add a copy
+     *  Add a copy to the copy list
      */
     public boolean addCopy(Copy copy) {
         boolean result = false;
@@ -77,7 +72,7 @@ public class LP {
     }
 
     /**
-     *  Remove a copy
+     *  Remove a copy from the copy list
      */
     public boolean removeCopy(Copy copy) {
         boolean result = false;

@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=PersonContainer
+comment0.text=\r\n\ This\ class\ is\ used\ to\ represent\ the\ container\ used\ to\ store\ the\ person's\ information\r\n\ Used\ to\ access\ all\ persons\ and\ to\ get\ filtered\ list\ when\ needed\r\n\ \r\n\ @author\ Group1\ for\ MiniProject-Design\ DMAI0920\r\n\ @version\ 27\ October\ 2020\r\n
 comment1.params=
 comment1.target=PersonContainer()
 comment2.params=
