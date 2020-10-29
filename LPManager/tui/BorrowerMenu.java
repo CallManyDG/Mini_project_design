@@ -2,20 +2,29 @@ package tui;
 import java.util.*;
 
 /**
- * Write a description of class BorrowerMenu here.
+ * The Person menu UI giving different options to manage LPs
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Group1 for MiniProject-Design DMAI0920
+ * @version 28 October 2020
  */
 public class BorrowerMenu
 {
+    /**
+     * Default public constructor
+     */
     public BorrowerMenu (){
     }
 
+    /**
+     * Method to start the Person menu
+     */
     public void start () {
         borrowerMenu();
     }
 
+    /**
+     * A method to show the user options and get their input
+     */
     private void borrowerMenu() {
         boolean running = true;
         while (running) {
@@ -37,6 +46,9 @@ public class BorrowerMenu
         }
     }
 
+    /**
+     * A method to print the user options on the Person menu and get an input
+     */
     private int writeBorrowerMenu() {
         Scanner keyboard = new Scanner (System.in);
         System.out.println ("*****Borrower menu*****");
@@ -48,6 +60,9 @@ public class BorrowerMenu
         return choice;
     }
 
+    /**
+     * A method to get an integer from the user
+     */
     private int getIntegerFromUser(Scanner keyboard) {
         while (!keyboard.hasNextInt()) {
             System.out.println("Input must be a number! Try again.");

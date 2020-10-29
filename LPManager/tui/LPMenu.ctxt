@@ -1,17 +1,25 @@
 #BlueJ class context
 comment0.target=LPMenu
+comment0.text=\r\n\ The\ LP\ menu\ UI\ giving\ different\ options\ to\ manage\ LPs\r\n\r\n\ @author\ Group1\ for\ MiniProject-Design\ DMAI0920\r\n\ @version\ 28\ October\ 2020\r\n
 comment1.params=
 comment1.target=LPMenu()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ LPMenu\r\n
 comment2.params=
 comment2.target=void\ start()
+comment2.text=\r\n\ Method\ to\ start\ the\ LP\ menu\r\n
 comment3.params=
 comment3.target=void\ LPmenu()
+comment3.text=\r\n\ A\ method\ to\ show\ the\ user\ options\ and\ get\ their\ input\r\n
 comment4.params=
 comment4.target=boolean\ createLP()
+comment4.text=\r\n\ A\ method\ to\ get\ the\ user\ input\ and\ call\ the\ controller\ to\ create\ a\ LP\r\n
 comment5.params=
 comment5.target=boolean\ addCopyForLP()
+comment5.text=\r\n\ A\ method\ to\ add\ a\ copy\ to\ a\ specified\ by\ user\ input\ LP\r\n
 comment6.params=
 comment6.target=int\ writeLPMenu()
+comment6.text=\r\n\ A\ method\ to\ print\ the\ user\ options\ on\ the\ LP\ menu\ and\ get\ an\ input\r\n
 comment7.params=keyboard
 comment7.target=int\ getIntegerFromUser(java.util.Scanner)
+comment7.text=\r\n\ A\ method\ to\ get\ an\ integer\ from\ the\ user\r\n
 numComments=8

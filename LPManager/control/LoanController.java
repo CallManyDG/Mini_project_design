@@ -29,10 +29,12 @@ public class LoanController {
      */
     public boolean createLoan(String agreedReturnDate, ArrayList<Copy> copies, String phone) {
         boolean result = false;
-        // find person by phone
-        Person person = personCon.findPersonByPhone(phone);
         // Call loan constructor
         Loan loan = new Loan(agreedReturnDate, copies);
+        // find person by phone
+        Person person = personCon.findPersonByPhone(phone);
+        //Add loan to the container
+        LoanContainer.getInstance().addLoan(loan);
         // Assing loan to person
         if(person != null) {
             result = personCon.addLoanToPerson(loan, person);

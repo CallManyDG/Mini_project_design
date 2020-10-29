@@ -1,31 +1,39 @@
 package tui;
 import java.util.Scanner;
 
-
 /**
- * Write a description of class MainMenuUI here.
+ * The Main menu displayed in the UI. Provides access to the different options the user has
  *
- * @author Denisa
- * @version 26 oct. 2020
+ * @author Group1 for MiniProject-Design DMAI0920
+ * @version 27 October 2020
  */
-public class MainMenuUI
-{
+public class MainMenuUI {
+    //Fields of the class
     private LoanMenu loanMenu;
     private BorrowerMenu borrowerMenu;
     private LPMenu lpMenu;
     private TryMe tryMe = new TryMe();
     
-    public MainMenuUI () {
+    /**
+     * Constructor for objects of this MainMenuUI
+     */
+    public MainMenuUI() {
         loanMenu = new LoanMenu();
         borrowerMenu = new BorrowerMenu();
         lpMenu = new LPMenu();
     }
     
-    
+    /**
+     * This method starts the main menu
+     */
     public void start (){
         mainMenu();
     }
     
+    /**
+     * Method used to display the main menu until theu ser decides to exit
+     * Executes the different options based on user input
+     */
     public void mainMenu () {
         boolean running = true;
         while (running) {
@@ -54,6 +62,9 @@ public class MainMenuUI
         }
     }
     
+    /**
+     * A method to show the user options and get their input
+     */
     private int writeMainMenu () {
         Scanner keyboard = new Scanner(System.in);
         System.out.println ("******Main menu******");
@@ -70,6 +81,9 @@ public class MainMenuUI
         return choice;
     }
     
+    /**
+     * Displays a goodbye message when the user exits
+     */
     public void writeEnd () {
         System.out.println ("Thank you for using the program.");
     }

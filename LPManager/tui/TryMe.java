@@ -3,20 +3,33 @@ package tui;
 import control.*;
 import model.*;
 
-public class TryMe
-{
-    
+/**
+ * A class used for testing
+ *
+ * @author Group1 for MiniProject-Design DMAI0920
+ * @version 29 October 2020
+ */
+public class TryMe {
+    /**
+     * A method to start the test
+     */
     public void tryMe() {
         fillContainers();
         System.out.println("Done...");
     }
     
+    /**
+     * A method to fill the containers with test data
+     */
     private void fillContainers() {
         System.out.println("Generating Dummy Data!");
         fillPersonContainer();
         fillLPContainer();
     }
     
+    /**
+     * A method to fill the person container with test data
+     */
     private void fillPersonContainer() {
         PersonContainer container = PersonContainer.getInstance();
         container.addPerson(new Person("Alex", "st. Nibevej 12", "9200", "Aalborg", "000000000"));
@@ -26,6 +39,9 @@ public class TryMe
         container.addPerson(new Person("Nikol", "st. Sunshine 14", "9200", "Aalborg", "111000000"));
     }
     
+    /**
+     * A method to fill the LP container with test data
+     */
     private void fillLPContainer() {
         LPContainer lpCon = LPContainer.getInstance();
         

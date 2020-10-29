@@ -1,11 +1,16 @@
 #BlueJ class context
 comment0.target=TryMe
+comment0.text=\r\n\ A\ class\ used\ for\ testing\r\n\r\n\ @author\ Group1\ for\ MiniProject-Design\ DMAI0920\r\n\ @version\ 29\ October\ 2020\r\n
 comment1.params=
 comment1.target=void\ tryMe()
+comment1.text=\r\n\ A\ method\ to\ start\ the\ test\r\n
 comment2.params=
 comment2.target=void\ fillContainers()
+comment2.text=\r\n\ A\ method\ to\ fill\ the\ containers\ with\ test\ data\r\n
 comment3.params=
 comment3.target=void\ fillPersonContainer()
+comment3.text=\r\n\ A\ method\ to\ fill\ the\ person\ container\ with\ test\ data\r\n
 comment4.params=
 comment4.target=void\ fillLPContainer()
+comment4.text=\r\n\ A\ method\ to\ fill\ the\ LP\ container\ with\ test\ data\r\n
 numComments=5

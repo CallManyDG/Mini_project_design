@@ -6,23 +6,32 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 /**
- * Write a description of class LoanMenu here.
+ * The Loan menu UI giving different options to manage loans
  *
- * @author Denisa
- * @version 26 oct. 2020
+ * @author Group1 for MiniProject-Design DMAI0920
+ * @version 27 October 2020
  */
-public class LoanMenu
-{
+public class LoanMenu {
+    //Fields of the class
     private LoanController loanControl;
     
+    /**
+     * Constructor for objects of LoanMenu
+     */
     public LoanMenu() {
         loanControl = new LoanController();
     }
 
+    /**
+     * Method to start the loan menu
+     */
     public void start () {
         loanMenu();
     }
 
+    /**
+     * A method to show the user options and get their input
+     */
     private void loanMenu() {
         boolean running = true;
         while (running) {
@@ -42,6 +51,9 @@ public class LoanMenu
         }
     }
 
+    /**
+     * A method to get the user input and call the controller to create a loan
+     */
     private boolean createLoan() {
         boolean result = false;
         Scanner keyboard = new Scanner(System.in);
@@ -62,7 +74,7 @@ public class LoanMenu
         String agreedReturnDate = keyboard.nextLine();
         ArrayList<Copy> copies = getCopies();
         
-        if(copies == null || copies.isEmpty()) {
+        if(copies == null || copies.isEmpty()) { //Create if all is set
             System.out.println("No copies specified... cancelling loan creation.");
         } else {
             if(loanControl.createLoan(agreedReturnDate, copies, phone)) {
@@ -74,6 +86,10 @@ public class LoanMenu
         return result;
     }
     
+    /**
+     *  A method to get the user input on what copies to add to the loan
+     *  returns the chosen copies
+     */
     private ArrayList<Copy> getCopies() {
         ArrayList<Copy> copiesToReturn = new ArrayList<>();
         Scanner keyboard = new Scanner(System.in);
@@ -100,6 +116,9 @@ public class LoanMenu
         return copiesToReturn;
     }
     
+    /**
+     * A method to print the user options on adding copies and get an input
+     */
     private int printCopyLoanMenu() {
         Scanner keyboard = new Scanner (System.in);
         System.out.println ("*****Add Copy*****");
@@ -110,6 +129,9 @@ public class LoanMenu
         return choice;
     }
     
+    /**
+     * A method to print the user options on the loan menu and get an input
+     */
     private int writeLoanMenu () {
         Scanner keyboard = new Scanner (System.in);
         System.out.println ("*****Loan menu*****");
@@ -120,6 +142,9 @@ public class LoanMenu
         return choice;
     }
     
+    /**
+     * A method to get an integer from the user
+     */
     private int getIntegerFromUser(Scanner keyboard) {
         while (!keyboard.hasNextInt()) {
             System.out.println("Input must be a number! Try again.");

@@ -1,14 +1,19 @@
 #BlueJ class context
 comment0.target=BorrowerMenu
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ BorrowerMenu\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ Person\ menu\ UI\ giving\ different\ options\ to\ manage\ LPs\r\n\r\n\ @author\ Group1\ for\ MiniProject-Design\ DMAI0920\r\n\ @version\ 28\ October\ 2020\r\n
 comment1.params=
 comment1.target=BorrowerMenu()
+comment1.text=\r\n\ Default\ public\ constructor\r\n
 comment2.params=
 comment2.target=void\ start()
+comment2.text=\r\n\ Method\ to\ start\ the\ Person\ menu\r\n
 comment3.params=
 comment3.target=void\ borrowerMenu()
+comment3.text=\r\n\ A\ method\ to\ show\ the\ user\ options\ and\ get\ their\ input\r\n
 comment4.params=
 comment4.target=int\ writeBorrowerMenu()
+comment4.text=\r\n\ A\ method\ to\ print\ the\ user\ options\ on\ the\ Person\ menu\ and\ get\ an\ input\r\n
 comment5.params=keyboard
 comment5.target=int\ getIntegerFromUser(java.util.Scanner)
+comment5.text=\r\n\ A\ method\ to\ get\ an\ integer\ from\ the\ user\r\n
 numComments=6

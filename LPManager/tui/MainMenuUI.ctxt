@@ -1,14 +1,19 @@
 #BlueJ class context
 comment0.target=MainMenuUI
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ MainMenuUI\ here.\r\n\r\n\ @author\ Denisa\r\n\ @version\ 26\ oct.\ 2020\r\n
+comment0.text=\r\n\ The\ Main\ menu\ displayed\ in\ the\ UI.\ Provides\ access\ to\ the\ different\ options\ the\ user\ has\r\n\r\n\ @author\ Group1\ for\ MiniProject-Design\ DMAI0920\r\n\ @version\ 27\ October\ 2020\r\n
 comment1.params=
 comment1.target=MainMenuUI()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ this\ MainMenuUI\r\n
 comment2.params=
 comment2.target=void\ start()
+comment2.text=\r\n\ This\ method\ starts\ the\ main\ menu\r\n
 comment3.params=
 comment3.target=void\ mainMenu()
+comment3.text=\r\n\ Method\ used\ to\ display\ the\ main\ menu\ until\ theu\ ser\ decides\ to\ exit\r\n\ Executes\ the\ different\ options\ based\ on\ user\ input\r\n
 comment4.params=
 comment4.target=int\ writeMainMenu()
+comment4.text=\r\n\ A\ method\ to\ show\ the\ user\ options\ and\ get\ their\ input\r\n
 comment5.params=
 comment5.target=void\ writeEnd()
+comment5.text=\r\n\ Displays\ a\ goodbye\ message\ when\ the\ user\ exits\r\n
 numComments=6
