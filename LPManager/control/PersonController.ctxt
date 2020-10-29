@@ -1,7 +1,10 @@
 #BlueJ class context
 comment0.target=PersonController
+comment0.text=\r\n\ Controller\ for\ the\ person.\ Bridges\ the\ gap\ between\ UI\ and\ Model\ layers\r\n\ Used\ to\ create\ person\ and\ access\ information\ from\ the\ model\ layer\r\n\ \r\n\ @author\ Group1\ for\ MiniProject-Design\ DMAI0920\r\n\ @version\ 28\ October\ 2020\r\n
 comment1.params=phone
 comment1.target=model.Person\ findPersonByPhone(java.lang.String)
+comment1.text=\r\n\ \ Gets\ a\ person\ with\ specified\ phone\ from\ the\ Person\ Container\r\n
 comment2.params=loan\ person
 comment2.target=boolean\ addLoanToPerson(model.Loan,\ model.Person)
+comment2.text=\r\n\ \ Adds\ a\ loan\ to\ the\ list\ of\ loans\ of\ a\ person\r\n
 numComments=3

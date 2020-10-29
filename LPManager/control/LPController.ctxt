@@ -1,11 +1,16 @@
 #BlueJ class context
 comment0.target=LPController
+comment0.text=\r\n\ Controller\ for\ the\ LP.\ Bridges\ the\ gap\ between\ UI\ and\ Model\ layers\r\n\ Used\ to\ create\ LP\ and\ access\ information\ from\ the\ model\ layer\r\n\ \r\n\ @author\ Group1\ for\ MiniProject-Design\ DMAI0920\r\n\ @version\ 28\ October\ 2020\r\n
 comment1.params=title\ author\ publicationDate
 comment1.target=boolean\ createLP(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ \ Creates\ an\ n\ LP\ by\ given\ title,\ author,\ and\ pub.\ date\ and\ adds\ it\ to\ the\ container\r\n\ \ Returns\ true\ if\ the\ action\ was\ successful\r\n
 comment2.params=title\ author\ serialNumber
 comment2.target=boolean\ addLPCopy(java.lang.String,\ java.lang.String,\ int)
+comment2.text=\r\n\ \ Adds\ a\ copy\ to\ an\ LP\ specified\ by\ title\ and\ author.\ Checks\ if\ the\ copy\ with\ that\ serial\ number\ doesn't\ exist\ and\ adds\ it\ to\ the\ LP\ copies\r\n\ \ Returns\ true\ if\ the\ action\ was\ successful\r\n
 comment3.params=title\ author
 comment3.target=model.Copy\ findFirstAvailableCopy(java.lang.String,\ java.lang.String)
+comment3.text=\r\n\ \ A\ method\ used\ to\ find\ the\ first\ availabel\ copy\ of\ an\ LP,\ specified\ by\ title\ and\ author\r\n\ \ Returns\ the\ found\ copy\ or\ null\r\n
 comment4.params=serialNumber
 comment4.target=boolean\ copyExists(int)
+comment4.text=\r\n\ \ Method\ to\ check\ if\ a\ Copy\ with\ a\ specific\ serial\ number\ exists\r\n
 numComments=5

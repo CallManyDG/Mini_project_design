@@ -1,11 +1,16 @@
 #BlueJ class context
 comment0.target=LoanController
+comment0.text=\r\n\ Controller\ for\ the\ loans.\ Bridges\ the\ gap\ between\ UI\ and\ Model\ layers\r\n\ Used\ to\ create\ loans\ and\ access\ information\ from\ the\ model\ layer\r\n\ \r\n\ @author\ Group1\ for\ MiniProject-Design\ DMAI0920\r\n\ @version\ 28\ October\ 2020\r\n
 comment1.params=
 comment1.target=LoanController()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ this\ controller\r\n
 comment2.params=agreedReturnDate\ copies\ phone
 comment2.target=boolean\ createLoan(java.lang.String,\ java.util.ArrayList,\ java.lang.String)
+comment2.text=\r\n\ \ A\ method\ used\ to\ create\ a\ loan\ using\ a\ date\ and\ list\ of\ copies.\ Asign\ to\ a\ person\ found\ by\ given\ phone\ number\r\n\ \ returns\ true\ if\ the\ action\ was\ successful\r\n
 comment3.params=title\ author
 comment3.target=model.Copy\ getCopy(java.lang.String,\ java.lang.String)
+comment3.text=\r\n\ \ Gets\ a\ copy\ by\ title\ and\ author\ from\ the\ LP\ Controller\r\n
 comment4.params=phone
 comment4.target=model.Person\ getPerson(java.lang.String)
+comment4.text=\r\n\ \ Gets\ a\ person\ by\ phone\ from\ the\ Person\ Controller\r\n
 numComments=5

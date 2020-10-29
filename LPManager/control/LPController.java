@@ -3,8 +3,18 @@ package control;
 import java.util.*;
 import model.*;
 
+/**
+ * Controller for the LP. Bridges the gap between UI and Model layers
+ * Used to create LP and access information from the model layer
+ * 
+ * @author Group1 for MiniProject-Design DMAI0920
+ * @version 28 October 2020
+ */
 public class LPController {
-
+    /**
+     *  Creates an n LP by given title, author, and pub. date and adds it to the container
+     *  Returns true if the action was successful
+     */
     public boolean createLP(String title, String author, String publicationDate) {
         boolean result = false;
         LPContainer lpCon = LPContainer.getInstance();
@@ -15,6 +25,10 @@ public class LPController {
         return result;
     }
 
+    /**
+     *  Adds a copy to an LP specified by title and author. Checks if the copy with that serial number doesn't exist and adds it to the LP copies
+     *  Returns true if the action was successful
+     */
     public boolean addLPCopy(String title, String author, int serialNumber) {
         boolean result = false;
         LPContainer lpCon = LPContainer.getInstance();
@@ -26,6 +40,10 @@ public class LPController {
         return result;
     }
 
+    /**
+     *  A method used to find the first availabel copy of an LP, specified by title and author
+     *  Returns the found copy or null
+     */
     public Copy findFirstAvailableCopy(String title, String author) {
         // Find LP by name and author
         Copy copyToReturn = null;
@@ -47,7 +65,9 @@ public class LPController {
         return copyToReturn;
     }
 
-
+    /**
+     *  Method to check if a Copy with a specific serial number exists
+     */
     private boolean copyExists(int serialNumber) {
         Iterator<Copy> it = LPContainer.getInstance().getAllCopies().iterator();
         boolean found = false;
