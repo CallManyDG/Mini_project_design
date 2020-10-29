@@ -31,6 +31,7 @@ public class TryMe
         
         LP lp1 = new LP("Harry Potter", "JK Rowling", "14.1.2020");
         Copy cp1 = new Copy(123456);
+        lp1.addCopy(cp1);
         lpCon.addLP(lp1);
         
         LP lp2 = new LP("Hobbit", "John R.R. Tolkien", "14.1.2020");

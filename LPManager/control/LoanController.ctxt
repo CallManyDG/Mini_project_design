@@ -6,4 +6,6 @@ comment2.params=agreedReturnDate\ copies\ phone
 comment2.target=boolean\ createLoan(java.lang.String,\ java.util.ArrayList,\ java.lang.String)
 comment3.params=title\ author
 comment3.target=model.Copy\ getCopy(java.lang.String,\ java.lang.String)
-numComments=4
+comment4.params=phone
+comment4.target=model.Person\ getPerson(java.lang.String)
+numComments=5

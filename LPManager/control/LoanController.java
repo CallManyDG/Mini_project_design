@@ -29,4 +29,8 @@ public class LoanController {
     public Copy getCopy(String title, String author) {
         return lpCon.findFirstAvailableCopy(title, author);
     }
+    
+    public Person getPerson(String phone) {
+        return personCon.findPersonByPhone(phone);
+    }
 }

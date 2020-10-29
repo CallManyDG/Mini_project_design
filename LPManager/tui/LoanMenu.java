@@ -46,8 +46,18 @@ public class LoanMenu
         boolean result = false;
         Scanner keyboard = new Scanner(System.in);
         
-        System.out.printf("Enter a phone number to find a person...%n> ");
-        String phone = keyboard.nextLine();
+        String phone;
+        String message = "Enter a phone number to find a person...%n> "; //Show this message the 1st time
+        do { //Ask for a phone until it finds a person or the user exits
+            System.out.printf(message);
+            phone = keyboard.nextLine();
+            if(phone.equalsIgnoreCase("exit")) { //Stop if the user wats to exit
+                return false;
+            }
+            message = "Person with phone \"" + phone + "\" was not found! Try again or type \"exit\"...%n> "; //Set the message to an error after the 1st time
+        } while(loanControl.getPerson(phone) == null);
+        System.out.println("Proceed creating a loan for " + loanControl.getPerson(phone).getName());
+        
         System.out.printf("Enter an agreed return date for the copy...%n> ");
         String agreedReturnDate = keyboard.nextLine();
         ArrayList<Copy> copies = getCopies();
@@ -58,7 +68,7 @@ public class LoanMenu
             if(loanControl.createLoan(agreedReturnDate, copies, phone)) {
                 System.out.println("Successfuly created the loan.");
             } else {
-                System.out.printf("Failed to find person with phone number \"%s\"!%n", phone);
+                System.out.printf("Something wen't horribly wrong...", phone);
             }
         }
         return result;
@@ -94,7 +104,7 @@ public class LoanMenu
         Scanner keyboard = new Scanner (System.in);
         System.out.println ("*****Add Copy*****");
         System.out.println ("(1) Add copy");
-        System.out.println ("(0) Exit");
+        System.out.println ("(0) Finish Loan Creation");
         System.out.println ("Select: ");
         int choice = getIntegerFromUser(keyboard);
         return choice;
