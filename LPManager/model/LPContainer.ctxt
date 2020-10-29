@@ -1,17 +1,25 @@
 #BlueJ class context
 comment0.target=LPContainer
+comment0.text=\r\n\ This\ class\ is\ used\ to\ represent\ the\ container\ (Singleton)\ used\ to\ store\ LP\ information\r\n\ Used\ to\ access\ all\ LPs\r\n\ \r\n\ @author\ Group1\ for\ MiniProject-Design\ DMAI0920\r\n\ @version\ 27\ October\ 2020\r\n
 comment1.params=
 comment1.target=LPContainer()
+comment1.text=\r\n\ \ Constructor\ for\ the\ instance\ of\ the\ class\r\n
 comment2.params=
 comment2.target=LPContainer\ getInstance()
+comment2.text=\r\n\ \ A\ method\ to\ access\ the\ instance\ of\ the\ class\r\n
 comment3.params=lp
 comment3.target=boolean\ addLP(LP)
+comment3.text=\r\n\ \ A\ method\ to\ add\ a\ LP\ to\ the\ container\r\n\ \ returns\ true\ if\ the\ operation\ was\ successful\r\n
 comment4.params=lp
 comment4.target=boolean\ removeLP(LP)
+comment4.text=\r\n\ \ A\ method\ to\ remove\ a\ LP\ the\ container\r\n\ \ returns\ true\ if\ the\ operation\ was\ successful\r\n
 comment5.params=
 comment5.target=java.util.ArrayList\ getAllLPs()
+comment5.text=\r\n\ \ Accessor\ method\ used\ to\ get\ all\ LPs\ in\ the\ container\r\n
 comment6.params=
 comment6.target=java.util.ArrayList\ getAllCopies()
+comment6.text=\r\n\ \ Accessor\ method\ used\ to\ get\ all\ copies\ from\ all\ LPs\r\n
 comment7.params=title\ author
 comment7.target=LP\ getLPByNameAndAuthor(java.lang.String,\ java.lang.String)
+comment7.text=\r\n\ \ A\ method\ to\ get\ a\ specific\ LP\ by\ title\ and\ author\r\n\ \ returns\ the\ found\ LP\ or\ a\ null\r\n
 numComments=8

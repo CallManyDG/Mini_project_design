@@ -1,16 +1,22 @@
 #BlueJ class context
 comment0.target=PersonContainer
-comment0.text=\r\n\ This\ class\ is\ used\ to\ represent\ the\ container\ used\ to\ store\ the\ person's\ information\r\n\ Used\ to\ access\ all\ persons\ and\ to\ get\ filtered\ list\ when\ needed\r\n\ \r\n\ @author\ Group1\ for\ MiniProject-Design\ DMAI0920\r\n\ @version\ 27\ October\ 2020\r\n
+comment0.text=\r\n\ This\ class\ is\ used\ to\ represent\ the\ container\ (Singleton)\ used\ to\ store\ the\ person\ information\r\n\ Used\ to\ access\ all\ persons\ and\ to\ get\ filtered\ list\ when\ needed\r\n\ \r\n\ @author\ Group1\ for\ MiniProject-Design\ DMAI0920\r\n\ @version\ 27\ October\ 2020\r\n
 comment1.params=
 comment1.target=PersonContainer()
+comment1.text=\r\n\ \ Constructor\ for\ the\ instance\ of\ the\ class\r\n
 comment2.params=
 comment2.target=PersonContainer\ getInstance()
+comment2.text=\r\n\ \ A\ method\ to\ access\ the\ instance\ of\ the\ class\r\n
 comment3.params=person
 comment3.target=boolean\ addPerson(Person)
+comment3.text=\r\n\ \ A\ method\ to\ add\ a\ person\ to\ the\ container\r\n\ \ returns\ true\ if\ the\ operation\ was\ successful\r\n
 comment4.params=person
 comment4.target=boolean\ removePerson(Person)
+comment4.text=\r\n\ \ A\ method\ to\ remove\ a\ person\ from\ the\ container\r\n\ \ returns\ true\ if\ the\ operation\ was\ successful\r\n
 comment5.params=
 comment5.target=java.util.ArrayList\ getAllPersons()
+comment5.text=\r\n\ \ Accessor\ method\ used\ to\ get\ all\ persons\ in\ the\ container\r\n
 comment6.params=phone
 comment6.target=Person\ findPersonByPhone(java.lang.String)
+comment6.text=\r\n\ \ A\ method\ to\ find\ a\ specific\ person\ by\ phone\r\n\ \ returns\ the\ found\ person\ or\ null\ if\ it\ didn't\ find\ any\r\n
 numComments=7

@@ -1,13 +1,19 @@
 #BlueJ class context
 comment0.target=LoanContainer
+comment0.text=\r\n\ This\ class\ is\ used\ to\ represent\ the\ container\ (Singleton)\ used\ to\ store\ the\ loan\ information\r\n\ Used\ to\ access\ all\ loans\r\n\ \r\n\ @author\ Group1\ for\ MiniProject-Design\ DMAI0920\r\n\ @version\ 27\ October\ 2020\r\n
 comment1.params=
 comment1.target=LoanContainer()
+comment1.text=\r\n\ \ Constructor\ for\ the\ instance\ of\ the\ class\r\n
 comment2.params=
 comment2.target=LoanContainer\ getInstance()
+comment2.text=\r\n\ \ A\ method\ to\ access\ the\ instance\ of\ the\ class\r\n
 comment3.params=loan
 comment3.target=boolean\ addLoan(Loan)
+comment3.text=\r\n\ \ A\ method\ to\ add\ a\ loan\ to\ the\ container\r\n\ \ returns\ true\ if\ the\ operation\ was\ successful\r\n
 comment4.params=loan
 comment4.target=boolean\ removeLoan(Loan)
+comment4.text=\r\n\ \ A\ method\ to\ remove\ a\ loan\ from\ the\ container\r\n\ \ returns\ true\ if\ the\ operation\ was\ successful\r\n
 comment5.params=
 comment5.target=java.util.ArrayList\ getAllLoans()
+comment5.text=\r\n\ \ Accessor\ method\ used\ to\ get\ all\ persons\ in\ the\ container\r\n
 numComments=6
