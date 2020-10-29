@@ -106,8 +106,13 @@ public class LoanMenu {
                     String author = keyboard.nextLine();
                     Copy copy = loanControl.getCopy(title, author);
                     if (copy != null) {
-                        System.out.printf("Added %s by %s to the copies to loan%n", title, author);
-                        copiesToReturn.add(copy);
+                        //Display an error if the copy is already selected in another (or this) loan, otherwise add it
+                        if(copy.isAvailable() && !copiesToReturn.contains(copy)) {
+                            System.out.printf("Added %s by %s to the copies to loan%n", title, author);
+                            copiesToReturn.add(copy);
+                        } else {
+                            System.out.printf("There are no more avaiable copies of %s by %s!%n", title, author);
+                        }
                     } else {
                         System.out.printf("The copy by title %s and author %s was not found!%nTry again.%n%n", title, author);
                     }
