@@ -10,4 +10,6 @@ comment4.params=lp
 comment4.target=boolean\ removeLP(LP)
 comment5.params=
 comment5.target=java.util.ArrayList\ getAllLPs()
-numComments=6
+comment6.params=
+comment6.target=java.util.ArrayList\ getAllCopies()
+numComments=7

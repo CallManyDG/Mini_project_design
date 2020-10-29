@@ -27,7 +27,7 @@ public class LPMenu
                 createLP();
                 break;
                 case 2:
-                System.out.println ("??// Option 2");
+                addCopyForLP();
                 break;
                 default:
                 System.out.println ("Wrong choice");
@@ -56,11 +56,32 @@ public class LPMenu
         return result;
     }
 
+    private boolean addCopyForLP() {
+        boolean result = false;
+        Scanner keyboard = new Scanner(System.in);
+        
+        System.out.printf("Enter a title...%n> ");
+        String title = keyboard.nextLine();
+        System.out.printf("Enter an author...%n> ");
+        String author = keyboard.nextLine();
+        
+        System.out.printf("Enter an serial number for the copy...%n> ");
+        int serialNumber = getIntegerFromUser(keyboard);
+        
+        if(lpControl.addLPCopy(title, author, serialNumber)) {
+            System.out.printf("Successfuly added copy for LP with title %s and author %s!%n", title, author);
+        } else {
+            System.out.printf("Failed to add a copy to LP \"%s\" by %s!.%nLP doesn't exist or serial number \"%d\" is duplicate.%n%n", title, author, serialNumber);
+        }
+        
+        return result;
+    }
+    
     private int writeLPMenu () {
         Scanner keyboard = new Scanner (System.in);
         System.out.println ("*****LP menu*****");
         System.out.println ("(1) Add LP");
-        System.out.println ("(2) ???");
+        System.out.println ("(2) Add Copy to LP");
         System.out.println ("(0) Go back");
         System.out.println ("Select: ");
         int choice = getIntegerFromUser(keyboard);

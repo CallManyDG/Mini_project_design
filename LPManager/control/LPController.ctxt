@@ -2,8 +2,12 @@
 comment0.target=LPController
 comment1.params=title\ author\ publicationDate
 comment1.target=boolean\ createLP(java.lang.String,\ java.lang.String,\ java.lang.String)
-comment2.params=title\ author
-comment2.target=model.Copy\ findFirstAvailableCopy(java.lang.String,\ java.lang.String)
+comment2.params=title\ author\ serialNumber
+comment2.target=boolean\ addLPCopy(java.lang.String,\ java.lang.String,\ int)
 comment3.params=title\ author
-comment3.target=model.LP\ getLPByNameAndAuthor(java.lang.String,\ java.lang.String)
-numComments=4
+comment3.target=model.Copy\ findFirstAvailableCopy(java.lang.String,\ java.lang.String)
+comment4.params=title\ author
+comment4.target=model.LP\ getLPByNameAndAuthor(java.lang.String,\ java.lang.String)
+comment5.params=serialNumber
+comment5.target=boolean\ copyExists(int)
+numComments=6

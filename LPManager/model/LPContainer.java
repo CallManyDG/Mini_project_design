@@ -1,6 +1,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class LPContainer {
     private ArrayList<LP> lps;
@@ -33,5 +34,15 @@ public class LPContainer {
         
     public ArrayList<LP> getAllLPs() {
         return lps;
+    }
+    
+    public ArrayList<Copy> getAllCopies() {
+        ArrayList<Copy> copiesToReturn = new ArrayList<>();
+        for(LP lp: lps) {
+            for(Copy copy: lp.getAllCopies() ) {
+                copiesToReturn.add(copy);
+            }
+        }
+        return copiesToReturn;
     }
 }
