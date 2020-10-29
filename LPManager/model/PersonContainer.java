@@ -1,6 +1,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class PersonContainer {
     private ArrayList<Person> persons;
@@ -33,5 +34,21 @@ public class PersonContainer {
     
     public ArrayList<Person> getAllPersons() {
         return persons;
+    }
+    
+    public Person findPersonByPhone(String phone) {
+        Person personToReturn = null;
+        if(phone != null) {
+            Iterator<Person> searcher = persons.iterator();
+            boolean searching = true;
+            while(searcher.hasNext() && searching) {
+                Person currentPerson = searcher.next();
+                if(currentPerson.getPhone().equals(phone)) {
+                    personToReturn = currentPerson;
+                    searching = false;
+                }
+            }
+        }
+        return personToReturn;
     }
 }

@@ -45,4 +45,20 @@ public class LPContainer {
         }
         return copiesToReturn;
     }
+    
+    public LP getLPByNameAndAuthor(String title, String author) {
+        LP lpToReturn = null;
+        if(title != null && author != null) {
+            Iterator<LP> it = LPContainer.getInstance().getAllLPs().iterator();
+            boolean searching = true;
+            while(it.hasNext() && searching) {
+                LP lp = it.next();
+                if(lp.getTitle().equals(title) && lp.getAuthor().equals(author)){
+                    lpToReturn = lp;
+                    searching = false;
+                }
+            }
+        }
+        return lpToReturn;
+    }
 }

@@ -12,4 +12,6 @@ comment5.params=
 comment5.target=java.util.ArrayList\ getAllLPs()
 comment6.params=
 comment6.target=java.util.ArrayList\ getAllCopies()
-numComments=7
+comment7.params=title\ author
+comment7.target=LP\ getLPByNameAndAuthor(java.lang.String,\ java.lang.String)
+numComments=8

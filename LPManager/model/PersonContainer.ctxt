@@ -10,4 +10,6 @@ comment4.params=person
 comment4.target=boolean\ removePerson(Person)
 comment5.params=
 comment5.target=java.util.ArrayList\ getAllPersons()
-numComments=6
+comment6.params=phone
+comment6.target=Person\ findPersonByPhone(java.lang.String)
+numComments=7
