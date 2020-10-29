@@ -38,6 +38,10 @@ public class LoanController {
         // Assing loan to person
         if(person != null) {
             result = personCon.addLoanToPerson(loan, person);
+            //Set the copy availability to false
+            for(Copy copy: copies) {
+                copy.setAvailable(false);
+            }
         }
         return result;
     }
