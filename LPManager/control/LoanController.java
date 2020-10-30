@@ -29,14 +29,14 @@ public class LoanController {
      */
     public boolean createLoan(String agreedReturnDate, ArrayList<Copy> copies, String phone) {
         boolean result = false;
-        // Call loan constructor
-        Loan loan = new Loan(agreedReturnDate, copies);
         // find person by phone
         Person person = personCon.findPersonByPhone(phone);
-        //Add loan to the container
-        LoanContainer.getInstance().addLoan(loan);
-        // Assing loan to person
         if(person != null) {
+            // Call loan constructor
+            Loan loan = new Loan(agreedReturnDate, copies);
+            //Add loan to the container
+            LoanContainer.getInstance().addLoan(loan);
+            // Assing loan to person
             result = personCon.addLoanToPerson(loan, person);
             //Set the copy availability to false
             for(Copy copy: copies) {
